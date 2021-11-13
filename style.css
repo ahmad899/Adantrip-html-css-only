@@ -1,0 +1,412 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+
+}
+.hamburger-menu{
+    display: none;
+    color: white;
+    font-size: 30px;
+}
+.bg-image {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-image: url("./images/plate-flight-sky-sunset_1500x801.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 9;
+    top:0;
+}
+.bg-filter{
+    background-color:black;
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    filter: opacity(60%);
+}
+
+.container{
+    margin:0 10%;
+    position: relative;
+    z-index: 19;
+    height: 99vh;
+}
+/* Header  */
+header{
+    height: 40px;
+}
+
+nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:10px;
+    margin-bottom: 5px;
+}
+nav>.logo-left-links-container{
+    display: flex;
+    align-items: center;
+}
+nav>.logo-left-links-container>.left-links {
+    display: flex;
+    list-style-type:none;
+    align-items: center;
+
+}
+nav>.logo-left-links-container>.left-links>li {
+    color: rgb(209, 209, 209);
+    margin-right:25px;
+
+}
+.logo{
+    width: 100px;
+    margin-right: 20px;
+}
+.logo>img{
+    width: 100%;
+}
+
+nav>.right-links{
+    display: flex;
+    align-items: center;
+}
+nav>.right-links>div:nth-child(n){
+    color: white;
+    margin-left: 25px;
+    color:  rgb(209, 209, 209);
+    
+}
+
+.flag-img{
+    width: 25px;
+}
+.flag-img>img{
+    width: 100%;
+}
+hr{
+    border: none;
+    border-bottom: 1px solid rgb(122, 122, 122);
+}
+.my-account{
+    display: flex;
+}
+.my-account>i{
+    margin-right: 10px;
+    font-size: 20px;
+    align-items: center;
+    
+}
+/* End header */
+
+.flights{
+    margin-top:100px ;
+    margin-bottom: 70px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.flights>h1{
+    color: white;
+    font-weight: 100;
+    font-size: 50px; 
+}
+.flights>h5{
+    color:rgb(216, 213, 213);
+    font-size: 20px;
+    font-weight: 100;
+}
+.flight-info-inputs {
+    display: flex;
+    width: 90%;
+    height: 60px;
+    align-items: center;
+}
+.flight-input-item{
+    border:1px solid rgb(209, 209, 209);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    backdrop-filter:blur(30px);
+    
+}
+.flight-input-item>input{
+    height: inherit;
+    background-color: inherit;
+    border: 0;
+    width: 100%;
+    color: rgb(209, 209, 209);
+    font-weight: 100;
+    font-size: 20px;
+}
+.flight-input-item>input[type="date"]{
+    display: flex;
+    flex-direction: row-reverse;
+    color:white
+}
+.flight-input-item>input[type="date"]::-webkit-calendar-picker-indicator{
+      filter: invert(1);
+      margin:0 5px;
+}
+.flight-input-item>input::placeholder{
+    color:rgb(209, 209, 209);
+    font-weight: 100;
+    font-size: 20px;
+}
+.flight-input-item>input:focus {
+    border:none;
+    width: 100%;
+    outline: none;
+}
+.flight-input-item>i{
+    font-size: 20px;
+    color:rgb(209, 209, 209);
+    margin: 10px;
+    padding-bottom: 2px;
+}
+.flight-input-item:last-child{
+    border-color: transparent;
+    background-color: orangered;
+    width:80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px orangered
+}
+.trip-type{
+    display: flex;
+    margin: 10px 0;
+}
+.trip-type>.trip-type-item{
+    display: flex;
+     margin:0 10px;
+     color: rgb(209, 209, 209);
+     font-weight: 100;
+}
+.trip-type>.trip-type-item>input{
+    margin-right:5px;
+}
+.trip-type-item>input[type="radio"]:checked:after {
+     width: 15px;
+     height: 15px;
+     border-radius: 15px;
+     position: relative;
+     background-color: rgb(236, 114, 70);
+     content: '';
+     display: inline-block;
+     border: none
+}
+
+
+/* services */
+.services{
+    display: flex;
+    height: 200px;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.services-item{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin:0 10px;
+}
+.services-item>i{
+    font-size: 50px;
+    color: white;
+}
+.services-item>h1{
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+}
+.services-item>h5{
+    color: rgb(163, 162, 162);
+    font-weight: 100;
+    font-size: 20px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 50px 0;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.footer-left-links{
+    
+    
+}
+.footer-left-links>ul{
+    display: flex;
+    list-style-type: none;   
+   
+}
+.footer-left-links>ul>li {
+   color: white;
+   font-weight: 100;
+    margin-right: 20px;
+    margin-bottom:20px;
+    
+}
+.footer-left-links>p{
+    color: rgb(163, 162, 162);
+}
+
+.footer-right-links{
+    display: flex;
+    color: white;
+    margin: 10px;
+    
+}
+.footer-right-links>.footer-icon{
+    margin: 20px;
+    padding:10px;
+    border-radius: 30px;
+    background-color:rgb(54, 54, 54) ;
+}
+
+
+@media  screen and (max-width: 1000px) {
+
+    nav>.logo-left-links-container>.left-links {
+        display: none;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+    nav>.right-links{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:900px){
+ .container{
+     height: 1700px;
+     margin: 0 ;
+ }
+    .main{
+        height:100%;
+    }
+    .bg-image{
+        height: 1700px;
+    }
+    .bg-filter{
+        height: 100%;
+        height: 1700px;
+    }
+    header{
+        background-color:rgb(15, 40, 41);
+        margin:0;
+        padding: 0;
+        height: 70px;
+        padding:0 10px;
+    }
+    hr{
+        display: none;
+    }
+    nav{
+        margin:0;
+     
+    }
+    .flights{
+        height: 50%;
+        justify-content: space-between;
+        border: 0;
+          margin: 5%;
+    }
+
+    .flight-info-inputs{
+       flex-direction: column;
+        height: 100%;
+        margin:15px 0;
+        align-items: stretch;
+        width: 100%;
+    
+    }
+    .flight-input-item{
+        margin:10px 0;
+        padding:10px 0;
+        border-radius: 5px;
+    }
+    .flight-input-item:last-child {
+         width: 100%;
+          
+    }
+    .flight-input-item:last-child::before {
+        width: 100%;
+       
+    }
+    .flight-input-item>input[type="button"] {
+        padding:10px;
+       
+  }
+   .trip-type{
+       justify-content: center;
+   }
+    .services{
+        flex-direction: column;
+        height: 60%;
+        margin:0 5%;
+       
+    }
+    .services-item{
+        width: 100%;
+        margin:12px 0;
+        height: 100%;
+        justify-content: space-around;
+    }
+    .services-item:nth-child(n){
+        margin-bottom: 10px;
+    }
+    .services-item>i{
+        margin-bottom: 10px;
+    }
+     .services-item>h1 {
+         margin-bottom: 10px;
+    }
+     .services-item>h5 {
+        margin-bottom: 10px;
+     }
+    footer{
+        margin:10px 0;
+        margin-bottom: 0;
+        background-color: rgb(15, 40, 41);
+  
+    }
+    .footer-links{
+        text-align: center;
+        flex-direction: column;
+        margin-top:20px
+    }
+    .footer-left-links{
+        align-items: center;
+        justify-content: center;
+     
+        font-size: 11px;
+        margin: 0;
+    }
+    .footer-right-links{
+        justify-content: center;
+   
+    }
+ 
+}
